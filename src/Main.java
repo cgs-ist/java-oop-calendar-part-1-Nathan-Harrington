@@ -1,7 +1,8 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         // Current year for the calendar
-        int currentYear = 2023;
+        Year currentYear = new Year(2023);
 
         // Create a Calendar object
         Calendar calendar = new Calendar(currentYear);
@@ -10,7 +11,7 @@ public class Main {
         List<Month> months = calendar.getMonths();
         for (int i = 0; i < months.size(); i++) {
             Month month = months.get(i);
-            System.out.println("Month: " + month.getName() + ", Days: " + month.getNumberOfDays());
+            System.out.println("Month: " + month.getName() + ", Days: " + month.getNumOfDays());
         }
 
         // Example: Print all the days in the current year
